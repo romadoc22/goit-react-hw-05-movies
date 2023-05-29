@@ -1,9 +1,5 @@
-// import React from 'react'
-// import PropTypes from 'prop-types'
 import { useState } from 'react';
-
 import { Form, SearchBtn, BtnIcon, Input } from './Searchbar.styled';
-
 import SearchImg from '../../images/search-loop.svg';
 
 const Searchbar = ({ onSubmit }) => {
@@ -45,7 +41,5 @@ const Searchbar = ({ onSubmit }) => {
     </Form>
   );
 };
-
-// SearchForm.propTypes = {}
 
 export default Searchbar;

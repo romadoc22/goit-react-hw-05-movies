@@ -1,9 +1,6 @@
 import { Li, Thumb, Img, StyledNavLink } from './ListOfMoviesItem.styled';
-
 import { Link } from 'react-router-dom';
-
 import NoPosterImage from '../../images/noPoster.jpg';
-
 import { useLocation } from 'react-router-dom';
 
 const ListOfMoviesItem = ({ movie }) => {

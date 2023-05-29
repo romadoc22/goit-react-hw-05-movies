@@ -1,4 +1,3 @@
-// підключення бібліотеки маршрутизації рутів
 import { Routes, Route } from 'react-router-dom';
 
 // підключення базового компонента в якому верстаємо застосунок
@@ -12,12 +11,6 @@ import Cast from './Cast/Cast';
 import Reviews from './Reviews/Reviews';
 import PageNotFound from '../PageNotFound/PageNotFound';
 
-// головний компонент з посторінковою маршрутизацією
-// всі рути прописуємо всережині компонента Routes
-// базовий рут (/) на компонент SharedLayout в якому верстаємо сторінку
-// всі інші рути - вкладені в нього як чілдрени і вставляються в компонент
-// SharedLayout - всередині Outlet, оскільки вкдажені, то прибираємо (/)
-// index - задання індексної сторінки застосунку
 export const App = () => {
   return (
     <>

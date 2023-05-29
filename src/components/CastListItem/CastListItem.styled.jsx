@@ -87,5 +87,5 @@ export const NameText = styled.div`
   line-height: 1.3;
   letter-spacing: 0.06em;
 
-  color: rgba(255, 107, 23, 1);
+  color: #5e1ec4;
 `;

@@ -14,7 +14,6 @@ const Reviews = () => {
       if (data.results.length === 0) {
         return;
       }
-      // console.log(data);
       setReviewes(data.results);
     });
   }, [movieId]);

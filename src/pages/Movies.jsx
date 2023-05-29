@@ -140,11 +140,6 @@ const Movies = () => {
           }
         }
       })
-      // .catch(e => {
-      // setError(e.message);
-      // toast.error(e.message);
-      // console.log('error', error);
-      // })
       .finally(() => {
         setShowLoader(false);
       });

@@ -1,10 +1,7 @@
 import React from 'react';
-// import PropTypes from 'prop-types'
-
 import { Ul, Li, Reviever } from './ReviewsList.styled';
 
 const ReviewsList = ({ reviewes }) => {
-  //   console.log('reviewes', reviewes);
   return (
     <Ul>
       {reviewes.map(review => {
@@ -19,7 +16,5 @@ const ReviewsList = ({ reviewes }) => {
     </Ul>
   );
 };
-
-// ReviewsList.propTypes = {}
 
 export default ReviewsList;

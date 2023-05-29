@@ -1,8 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-
 import noActorPhoto from '../../images/noActorPhoto.jpg';
-
 import {
   ActorCard,
   PhotoCardWrap,
@@ -34,7 +31,5 @@ const CastListItem = ({ actor }) => {
     </ActorCard>
   );
 };
-
-// CastListItem.propTypes = {};
 
 export default CastListItem;

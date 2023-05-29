@@ -1,8 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types'
-
 import { Ul } from './CastList.styled';
-
 import CastListItem from '../CastListItem/CastListItem';
 
 const CastList = ({ cast }) => {

@@ -4,7 +4,7 @@ import { Container } from 'components/App.styled';
 import { NavLink } from 'react-router-dom';
 
 export const StyledHeader = styled.header`
-  background-color: #ff6b17;
+  background-color: #b712e0;
   padding-top: 10px;
   padding-bottom: 10px;
   /* width: 100%; */
