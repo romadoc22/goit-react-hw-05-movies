@@ -8,11 +8,9 @@ import {
   Extra,
 } from './MovieCard.styled';
 
-import NoPosterImage from '../../images/Untitled-1.jpg';
+import NoPosterImage from '../../images/noPoster.jpg';
 
 const MovieCard = ({ movieInfo }) => {
-  console.log('movieInfo', movieInfo);
-
   const { vote_average } = movieInfo;
   const score = Math.round(vote_average * 10);
 
@@ -26,7 +24,7 @@ const MovieCard = ({ movieInfo }) => {
   return (
     <MovieCardWrap>
       <div>
-        <StyledNavLink to="">Back </StyledNavLink>
+        <StyledNavLink to="/">Back </StyledNavLink>
       </div>
       <div>
         <div>
@@ -43,8 +41,8 @@ const MovieCard = ({ movieInfo }) => {
           <p>{genres} </p>
         </div>
         <Extra>
-          <StyledNavLink to="">Cast </StyledNavLink>
-          <StyledNavLink to="">Reviewes </StyledNavLink>
+          <StyledNavLink to="cast">Cast</StyledNavLink>
+          <StyledNavLink to="reviews">Reviews</StyledNavLink>
         </Extra>
       </div>
     </MovieCardWrap>
