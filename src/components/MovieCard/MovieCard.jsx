@@ -1,4 +1,5 @@
-// import { NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { useRef } from 'react';
 import {
   MovieCardWrap,
   Img,
@@ -11,6 +12,8 @@ import {
 import NoPosterImage from '../../images/noPoster.jpg';
 
 const MovieCard = ({ movieInfo }) => {
+  const location = useLocation();
+  const backLinkLocationRef = useRef(location.state?.from ?? '/');
   const { vote_average } = movieInfo;
   const score = Math.round(vote_average * 10);
 
@@ -24,7 +27,7 @@ const MovieCard = ({ movieInfo }) => {
   return (
     <MovieCardWrap>
       <div>
-        <StyledNavLink to="/">Back </StyledNavLink>
+        <StyledNavLink to={backLinkLocationRef.current}>Back </StyledNavLink>
       </div>
       <div>
         <div>
